@@ -2,8 +2,9 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class DataProviderExample {
-    //primitivni i referentni tipovi (niza-referntni tipovi na podatoci;
-    // i matrica-primitivni tipovi na podatoci)
+    //primitivni i referentni tipovi
+    // niza - referntni tipovi na podatoci;
+    // matrica - primitivni tipovi na podatoci)
     // [][] - matrica
     // [] - niza
 
