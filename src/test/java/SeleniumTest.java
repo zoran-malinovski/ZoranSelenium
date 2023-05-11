@@ -7,7 +7,11 @@ import org.testng.annotations.Test;
 public class SeleniumTest {
 
 
-    public static void main(String[] args) {
+
+
+
+        @Test
+        public void FirstTest(){
 
         //Create a new instance of the Chrome driver
         System.setProperty("webdriver.chrome.driver", "C:\\Chrome Drivers\\chromedriver.exe");
@@ -29,9 +33,6 @@ public class SeleniumTest {
         WebElement element1 = driver.findElement(By.xpath("//*[@id=\"rso\"]/div[1]/div/div/div/div/div/div/div[1]/a"));
         element1.click();
 
-        //Click on Enable button
-        WebElement element2 = driver.findElement(By.id("onetrust-accept-btn-handler"));
-        element2.click();
 
 
         //check page title is moto gp - Prebaruvanje na google
@@ -40,8 +41,7 @@ public class SeleniumTest {
         //close the Browser : "quite" to close browser; "close" to close one tab
         //driver.quit();
 
-
-
-
     }
+
+
 }
