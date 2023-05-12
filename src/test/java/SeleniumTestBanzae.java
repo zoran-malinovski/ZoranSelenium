@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
+import java.net.URL;
+
 public class SeleniumTestBanzae {
 
 
@@ -16,6 +18,7 @@ public class SeleniumTestBanzae {
         WebDriver driver;
         driver = new ChromeDriver();
         driver.get("https://banzae.dev/");
+        String URL = driver.getCurrentUrl();
         driver.manage().window().maximize();
 
 
@@ -47,6 +50,12 @@ public class SeleniumTestBanzae {
         WebElement element6 = driver.findElement(By.xpath("//*[@id=\"wpcf7-f79-o1\"]/form/div[4]/input"));
         element6.submit();
 
+       /* driver.navigate().back();
+        URL = driver.getCurrentUrl();
+        System.out.println(URL);
+        */
+
+        driver.quit();
 
     }
 }
